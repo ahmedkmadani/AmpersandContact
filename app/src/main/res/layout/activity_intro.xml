@@ -9,20 +9,18 @@
         tools:context=".MainActivity">
 
 
-    <ImageView
-            android:layout_width="wrap_content"
+    <LinearLayout
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/walkthrough"
+            android:background="@mipmap/walkthrough"
             android:id="@+id/imageView2"
-            android:layout_weight="1"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toEndOf="parent" ></LinearLayout>
     <TextView
             android:text="KEEP IN TOUCH WITH THE PEOPLE OF AMPERSAND"
             android:layout_width="332dp"
             android:layout_height="36dp"
             android:textSize="15sp"
-            android:letterSpacing="1.73sp"
             android:textColor="#4c4d4f"
             android:id="@+id/textView3" android:layout_marginStart="20dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="20dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
@@ -34,7 +32,6 @@
             android:layout_height="18dp"
             android:textSize="13sp"
             android:lineHeight="18sp"
-            android:letterSpacing="0.5sp"
             android:textColor="#9b9b9b"
             android:id="@+id/textView4"
             android:layout_marginStart="21dp"
@@ -52,9 +49,8 @@
             android:textColor="#4a4a4a"
             android:textSize="15sp"
             android:lineHeight="25sp"
-            android:letterSpacing="0.2sp"
             android:gravity="center_horizontal"
-            android:id="@+id/textView5" app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/text_register" app:layout_constraintBottom_toBottomOf="parent"
             android:layout_marginBottom="47dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="36dp" android:layout_marginStart="36dp" app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="277dp" android:layout_marginRight="277dp" android:layout_marginTop="568dp"
@@ -63,18 +59,20 @@
             android:layout_width="68dp"
             android:layout_height="3dp"
             android:background="#c15837"
-            tools:layout_editor_absoluteY="636dp"
-            tools:layout_editor_absoluteX="51dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/text_register" android:layout_marginBottom="45dp"
+            app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="51dp" android:layout_marginStart="51dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="241dp" android:layout_marginRight="241dp"
+            app:layout_constraintHorizontal_bias="0.0" app:layout_constraintVertical_bias="0.0"/>
     <TextView
             android:text="SIGN IN"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
             android:lineHeight="25sp"
-            android:letterSpacing="0.2sp"
             android:textColor="#4a4a4a"
             android:gravity="center_horizontal"
-            android:id="@+id/textView6" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="29dp"
+            android:id="@+id/text_signin" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="29dp"
             android:layout_marginRight="29dp"
             android:layout_marginStart="234dp" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="234dp" android:layout_marginBottom="47dp"
@@ -84,9 +82,11 @@
             android:layout_width="68dp"
             android:layout_height="3dp"
             android:background="#c15837"
-            tools:layout_editor_absoluteX="275dp"
-            android:layout_marginTop="1dp"
-            app:layout_constraintTop_toBottomOf="@+id/textView6"
-    />
+            app:layout_constraintTop_toBottomOf="@+id/text_signin"
+            android:id="@+id/view2" android:layout_marginBottom="45dp" app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="68dp"
+            android:layout_marginRight="68dp" app:layout_constraintVertical_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="234dp"
+            android:layout_marginStart="234dp" app:layout_constraintHorizontal_bias="1.0"/>
 
 </android.support.constraint.ConstraintLayout>
