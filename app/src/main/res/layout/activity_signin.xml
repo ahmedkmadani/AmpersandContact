@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
+            xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
             android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
             android:fitsSystemWindows="true"
             android:background="#f4f4f0">
@@ -13,7 +13,19 @@
         <LinearLayout android:background="@mipmap/login"
                       android:layout_width="411dp"
                       android:layout_height="fill_parent"
-                      android:layout_marginBottom="87dp" android:layout_gravity="center_horizontal"></LinearLayout>
+                       android:layout_gravity="center_horizontal"></LinearLayout>
+
+        <TextView
+                android:text="Email or Password is incorrect, check and try again"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#af4830"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="19dp"
+                android:id="@+id/text_error" android:gravity="center_horizontal"
+                android:visibility="invisible"/>
 
         <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -75,5 +87,6 @@
                   android:textColor="#4c4d4f"
                   android:textSize="14sp"
         />
+
     </LinearLayout>
 </ScrollView>
